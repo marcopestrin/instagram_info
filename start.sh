@@ -99,8 +99,6 @@ total_followers() {
 
 get_info() {
     default_user=$user
-    read -p $'\e[1;31m[\e[0m\e[1;77m+\e[0m\e[1;31m]\e[0m\e[1;93m Account (leave it blank to use your account): \e[0m' user_account
-    user_account="${user_account:-${default_user}}"
 
     if [[ ! -d $user_account/ ]]; then
         mkdir $user_account
